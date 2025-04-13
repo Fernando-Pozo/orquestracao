@@ -15,12 +15,15 @@ class DynamoDbConfig {
 
     @Bean
     fun dynamoDbClient(): DynamoDbClient {
+        val localstackHost = System.getenv("LOCALSTACK_HOST") ?: "localhost"
+
         return DynamoDbClient.builder()
-            .endpointOverride(URI.create("http://localhost:4566"))
+            .endpointOverride(URI.create("http://$localstackHost:4566"))
             .credentialsProvider(
                 StaticCredentialsProvider.create(
-                AwsBasicCredentials.create("test", "test")
-            ))
+                    AwsBasicCredentials.create("test", "test")
+                )
+            )
             .region(Region.US_EAST_1)
             .build()
     }
