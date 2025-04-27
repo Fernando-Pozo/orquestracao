@@ -1,15 +1,16 @@
 package com.example.orquestrador.application.service
 
+import com.example.orquestrador.application.usecases.PagamentoUseCases
 import com.example.orquestrador.domain.Pagamento
-import com.example.orquestrador.adapters.outbound.repository.PagamentoRepository
+import com.example.orquestrador.domain.PagamentoRepositoryPort
 import org.springframework.stereotype.Service
 
 @Service
 class PagamentoService(
-    private val repository: PagamentoRepository
-){
+    private val repository: PagamentoRepositoryPort
+) : PagamentoUseCases {
 
-    fun processar(request: Pagamento){
+    override fun processar(request: Pagamento){
         repository.save(request)
     }
 
