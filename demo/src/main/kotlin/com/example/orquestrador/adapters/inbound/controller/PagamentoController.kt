@@ -1,9 +1,9 @@
-package com.example.orquestrador.controller
+package com.example.orquestrador.adapters.inbound.controller
 
 import com.example.orquestrador.controller.request.PostBoletoRequest
-import com.example.orquestrador.controller.request.PostCartaoRequest
-import com.example.orquestrador.extension.toPagamentoModel
-import com.example.orquestrador.service.PagamentoService
+import com.example.orquestrador.adapters.inbound.controller.request.PostCartaoRequest
+import com.example.orquestrador.utils.toPagamentoModel
+import com.example.orquestrador.application.service.PagamentoService
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody

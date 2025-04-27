@@ -1,7 +1,7 @@
-package com.example.orquestrador.service
+package com.example.orquestrador.application.service
 
-import com.example.orquestrador.model.Pagamento
-import com.example.orquestrador.repository.PagamentoRepository
+import com.example.orquestrador.domain.Pagamento
+import com.example.orquestrador.adapters.outbound.repository.PagamentoRepository
 import org.springframework.stereotype.Service
 
 @Service

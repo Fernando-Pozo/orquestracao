@@ -1,4 +1,4 @@
-package com.example.orquestrador.model
+package com.example.orquestrador.domain
 
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbAttribute
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbBean

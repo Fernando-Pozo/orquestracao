@@ -1,4 +1,4 @@
-package com.example.orquestrador.config
+package com.example.orquestrador.infrastucture.config
 
 import io.awspring.cloud.dynamodb.DynamoDbTemplate
 import org.springframework.context.annotation.Bean

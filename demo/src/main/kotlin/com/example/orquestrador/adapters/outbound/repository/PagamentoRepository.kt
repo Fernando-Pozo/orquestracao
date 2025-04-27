@@ -1,6 +1,6 @@
-package com.example.orquestrador.repository
+package com.example.orquestrador.adapters.outbound.repository
 
-import com.example.orquestrador.model.Pagamento
+import com.example.orquestrador.domain.Pagamento
 import io.awspring.cloud.dynamodb.DynamoDbTemplate
 import org.springframework.stereotype.Repository
 

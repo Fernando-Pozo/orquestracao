@@ -1,8 +1,8 @@
-package com.example.orquestrador.extension
+package com.example.orquestrador.utils
 
 import com.example.orquestrador.controller.request.PostBoletoRequest
-import com.example.orquestrador.controller.request.PostCartaoRequest
-import com.example.orquestrador.model.Pagamento
+import com.example.orquestrador.adapters.inbound.controller.request.PostCartaoRequest
+import com.example.orquestrador.domain.Pagamento
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 
 val mapper = jacksonObjectMapper()

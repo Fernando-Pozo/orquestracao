@@ -1,4 +1,4 @@
-package com.example.orquestrador.controller.request
+package com.example.orquestrador.adapters.inbound.controller.request
 
 class PostCartaoRequest (
 
